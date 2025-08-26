@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+env/
+
+# Dados grandes
+data/raw/
+data/processed/
+
+# VS Code
+.vscode/
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
