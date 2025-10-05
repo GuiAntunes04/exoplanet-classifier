@@ -7,6 +7,12 @@ An intelligent exoplanet classification system that uses machine learning to dis
 ![XGBoost](https://img.shields.io/badge/XGBoost-Latest-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
+## 🌐 Live Demo
+
+**🚀 Try the application online**: [https://exoplanet-classifier-spaceappschallenge.streamlit.app/](https://exoplanet-classifier-spaceappschallenge.streamlit.app/)
+
+The application is fully functional and ready to use! No installation required.
+
 ## 🌟 Features
 
 - **Modern Web Interface**: Streamlit interface with custom space theme
@@ -36,18 +42,24 @@ An intelligent exoplanet classification system that uses machine learning to dis
 
 ## 🛠️ Installation
 
-### 1. Clone the repository
+### Option 1: Use Online (Recommended)
+**No installation required!** Use the live application at: [https://exoplanet-classifier-spaceappschallenge.streamlit.app/](https://exoplanet-classifier-spaceappschallenge.streamlit.app/)
+
+### Option 2: Run Locally
+If you want to run the application locally:
+
+#### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/exoplanet-classifier.git
+git clone https://github.com/GuiAntunes04/exoplanet-classifier.git
 cd exoplanet-classifier
 ```
 
-### 2. Install dependencies
+#### 2. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the application
+#### 3. Run the application
 ```bash
 streamlit run app.py
 ```
@@ -162,8 +174,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 If you encounter any issues or have questions:
 
 1. Check the [documentation](units_documentation.md)
-2. Open an [issue](https://github.com/your-username/exoplanet-classifier/issues)
-3. Contact via email: your-email@example.com
+2. Try the [live application](https://exoplanet-classifier-spaceappschallenge.streamlit.app/) first
+3. Open an [issue](https://github.com/GuiAntunes04/exoplanet-classifier/issues)
+4. Contact via GitHub discussions
 
 ---
 
