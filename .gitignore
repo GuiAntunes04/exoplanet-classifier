@@ -58,6 +58,18 @@ data/kepler_clean.xlsx
 data/toi_clean.xlsx
 data/k2_clean.xlsx
 
+# Training data (sensitive)
+data/exoplanet_unified.xlsx
+
+# Development scripts (not needed for end users)
+model_xgb.py
+predict_cli.py
+predict_sheet.py
+process.py
+
+# Internal documentation
+GITHUB_SETUP.md
+
 # Logs
 *.log
 
