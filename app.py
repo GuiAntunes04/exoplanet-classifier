@@ -430,6 +430,32 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+# Aviso importante sobre limitações do modelo
+st.markdown("""
+<div style="background: rgba(255, 193, 7, 0.1); border: 2px solid #ffc107; border-radius: 15px; 
+            padding: 20px; margin: 20px 0; backdrop-filter: blur(10px);">
+    <h4 style="color: #ffc107; margin: 0 0 15px 0; text-align: center;">
+        ⚠️ AVISO IMPORTANTE - Limitações do Modelo
+    </h4>
+    <div style="color: #ffffff; text-align: center; line-height: 1.6;">
+        <p style="margin: 0 0 10px 0;">
+            <strong>Este modelo foi treinado com dados reais de exoplanetas.</strong>
+        </p>
+        <p style="margin: 0 0 10px 0;">
+            <strong>⚠️ Casos "absurdos" ou valores extremamente fora do padrão podem resultar em:</strong>
+        </p>
+        <ul style="margin: 10px 0; padding-left: 20px; text-align: left;">
+            <li><strong>Probabilidades altas incorretas</strong> (ex: 95%+ para dados impossíveis)</li>
+            <li><strong>Classificações errôneas</strong> devido a extrapolação além do treinamento</li>
+            <li><strong>Resultados não confiáveis</strong> para parâmetros físicamente impossíveis</li>
+        </ul>
+        <p style="margin: 10px 0 0 0; font-style: italic;">
+            <strong>Recomendação:</strong> Use apenas valores astronômicos realistas e dentro dos limites físicos conhecidos.
+        </p>
+    </div>
+</div>
+""", unsafe_allow_html=True)
+
 # Sistema de abas
 tab1, tab2 = st.tabs(["🔬 Classificação Individual", "📊 Importação em Lote"])
 
@@ -573,6 +599,17 @@ with tab1:
             Previsão baseada no seu modelo XGBoost treinado
         </div>
         """, unsafe_allow_html=True)
+        
+        # Aviso sobre confiabilidade
+        if prob_exoplanet > 0.9 or prob_exoplanet < 0.1:
+            st.markdown("""
+            <div style="background: rgba(255, 193, 7, 0.1); border: 1px solid #ffc107; border-radius: 10px; 
+                        padding: 15px; margin: 15px 0; text-align: center;">
+                <p style="color: #ffc107; margin: 0; font-weight: bold;">
+                    ⚠️ Probabilidade extrema detectada! Verifique se os valores inseridos são astronomicamente realistas.
+                </p>
+            </div>
+            """, unsafe_allow_html=True)
     else:
         st.markdown('</div>', unsafe_allow_html=True)
 
