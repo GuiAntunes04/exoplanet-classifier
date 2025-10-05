@@ -70,6 +70,14 @@ process.py
 # Internal documentation
 GITHUB_SETUP.md
 
+# Optional documentation (not needed for basic users)
+CONTRIBUTING.md
+DEPLOY.md
+
+# Development examples (not needed for basic users)
+api_example.py
+setup.py
+
 # Logs
 *.log
 
