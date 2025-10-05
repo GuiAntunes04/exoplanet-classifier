@@ -608,7 +608,7 @@ with tab2:
     
     # Carregar e disponibilizar a planilha de exemplo
     try:
-        with open("exemplo_planilha_exoplanetas.csv", "r", encoding="utf-8") as f:
+        with open("example_exoplanet_spreadsheet.csv", "r", encoding="utf-8") as f:
             csv_data = f.read()
         
         st.markdown("""
@@ -670,7 +670,7 @@ with tab2:
         st.markdown("""
         <div style="text-align: center; margin: 20px 0;">
             <a href="data:text/csv;charset=utf-8,""" + csv_data.replace('\n', '%0A') + """" 
-               download="exemplo_planilha_exoplanetas.csv" 
+               download="example_exoplanet_spreadsheet.csv" 
                style="display: inline-block; background: linear-gradient(45deg, #4ecdc4, #45b7d1); 
                       color: white; padding: 15px 40px; border-radius: 25px; 
                       text-decoration: none; font-weight: bold; font-size: 1.2rem;
@@ -691,11 +691,11 @@ with tab2:
         """, unsafe_allow_html=True)
         
         # Carregar e exibir preview
-        df_example = pd.read_csv("exemplo_planilha_exoplanetas.csv")
+        df_example = pd.read_csv("example_exoplanet_spreadsheet.csv")
         st.dataframe(df_example, use_container_width=True, hide_index=True)
         
     except FileNotFoundError:
-        st.error("❌ Arquivo de exemplo não encontrado. Verifique se 'exemplo_planilha_exoplanetas.csv' existe no diretório.")
+        st.error("❌ Arquivo de exemplo não encontrado. Verifique se 'example_exoplanet_spreadsheet.csv' existe no diretório.")
     except Exception as e:
         st.error(f"❌ Erro ao carregar planilha de exemplo: {str(e)}") 
 
