@@ -909,3 +909,4 @@ with tab2:
         except Exception as e:
             st.error(f"❌ Erro ao processar o arquivo: {str(e)}")
             st.write("Verifique se o arquivo está no formato correto e tente novamente.")
+            
